@@ -5,22 +5,22 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.0.7'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'jquery-rails'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
+gem 'jquery-rails', '>= 4.3.3'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.1.3'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'ethereum.rb'
 gem 'eth'
-gem 'versionist'
-gem 'responders'
-gem 'active_model_serializers'
+gem 'versionist', '>= 1.7.0'
+gem 'responders', '>= 2.4.0'
+gem 'active_model_serializers', '>= 0.10.7'
 gem "redis"
 gem 'settingslogic'
 gem 'sidekiq'
@@ -31,15 +31,15 @@ gem 'dotenv-deployment', require: 'dotenv/deployment'
 gem 'pg'
 gem 'unicorn'
 gem 'will_paginate'
-gem 'redis-rails'
+gem 'redis-rails', '>= 5.0.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.8.0'
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.6.2'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
