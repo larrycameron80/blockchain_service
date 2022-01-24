@@ -23,7 +23,7 @@ gem 'responders'
 gem 'active_model_serializers'
 gem "redis"
 gem 'settingslogic'
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.4.0'
 gem 'web3-eth'
 gem 'money-tree', '~> 0.10.0'
 gem 'dotenv'
@@ -49,7 +49,7 @@ group :development do
   gem 'capistrano-rvm', require: false
   gem 'capistrano3-unicorn', require: false
   gem 'capistrano-rails-console', require: false
-  gem 'capistrano-sidekiq', require: false
+  gem 'capistrano-sidekiq', '>= 1.0.2', require: false
 end
 
 group :test do
