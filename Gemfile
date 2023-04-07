@@ -23,7 +23,7 @@ gem 'responders'
 gem 'active_model_serializers'
 gem "redis"
 gem 'settingslogic'
-gem 'sidekiq'
+gem 'sidekiq', '>= 7.0.8'
 gem 'web3-eth'
 gem 'money-tree', '~> 0.10.0'
 gem 'dotenv'
