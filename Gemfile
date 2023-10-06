@@ -20,7 +20,7 @@ gem 'ethereum.rb'
 gem 'eth'
 gem 'versionist'
 gem 'responders'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '>= 0.10.14'
 gem "redis"
 gem 'settingslogic'
 gem 'sidekiq'
