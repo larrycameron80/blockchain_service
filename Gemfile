@@ -5,10 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.0.7'
+gem 'rails', '~> 7.0.0'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
@@ -23,7 +23,7 @@ gem 'responders'
 gem 'active_model_serializers'
 gem "redis"
 gem 'settingslogic'
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.1.0'
 gem 'web3-eth'
 gem 'money-tree', '~> 0.10.0'
 gem 'dotenv'
