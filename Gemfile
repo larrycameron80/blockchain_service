@@ -35,7 +35,7 @@ gem 'redis-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
 end
 
 group :development do
