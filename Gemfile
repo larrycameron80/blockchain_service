@@ -5,10 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.0.7'
+gem 'rails', '~> 7.0.0'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
@@ -49,7 +49,7 @@ group :development do
   gem 'capistrano-rvm', require: false
   gem 'capistrano3-unicorn', require: false
   gem 'capistrano-rails-console', require: false
-  gem 'capistrano-sidekiq', require: false
+  gem 'capistrano-sidekiq', '>= 3.1.0', require: false
 end
 
 group :test do
